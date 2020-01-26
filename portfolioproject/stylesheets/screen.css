@@ -155,48 +155,53 @@ header .carousel .box-info .register:hover, header .carousel-inner .box-info .re
 
 /* line 1, ../sass/partials/_main.scss */
 #services {
-  padding: 5rem 0;
+  padding: 5rem 0 0 0;
   position: relative;
 }
 /* line 4, ../sass/partials/_main.scss */
-#services .services-content {
+#services .part-services {
+  padding: 5rem;
+}
+/* line 6, ../sass/partials/_main.scss */
+#services .part-services .services-content {
+  position: relative;
   text-align: center;
   color: #fff;
   padding: 1rem;
   transition: all 0.2s;
 }
-/* line 9, ../sass/partials/_main.scss */
-#services .services-content:hover {
+/* line 12, ../sass/partials/_main.scss */
+#services .part-services .services-content:hover {
   background: rgba(180, 180, 180, 0.26);
 }
-/* line 12, ../sass/partials/_main.scss */
-#services .services-content a {
+/* line 15, ../sass/partials/_main.scss */
+#services .part-services .services-content a {
   text-decoration: none;
   color: #000;
   color: #fff;
 }
-/* line 15, ../sass/partials/_main.scss */
-#services .services-content a:hover {
+/* line 18, ../sass/partials/_main.scss */
+#services .part-services .services-content a:hover {
   color: #f6c452;
 }
-/* line 19, ../sass/partials/_main.scss */
-#services .services-content h1 {
+/* line 22, ../sass/partials/_main.scss */
+#services .part-services .services-content h1 {
   padding: 2rem 0;
   border-bottom: 1px solid #fff;
   text-transform: uppercase;
   font-size: 2rem;
 }
-/* line 25, ../sass/partials/_main.scss */
-#services .services-content svg {
+/* line 28, ../sass/partials/_main.scss */
+#services .part-services .services-content svg {
   padding: 3rem 0;
 }
-/* line 28, ../sass/partials/_main.scss */
-#services .services-content p {
+/* line 31, ../sass/partials/_main.scss */
+#services .part-services .services-content p {
   line-height: 1.5rem;
   margin-bottom: 2rem;
 }
-/* line 32, ../sass/partials/_main.scss */
-#services .services-content button {
+/* line 35, ../sass/partials/_main.scss */
+#services .part-services .services-content button {
   border: none;
   border-radius: 15px;
   padding: .3rem;
@@ -207,26 +212,27 @@ header .carousel .box-info .register:hover, header .carousel-inner .box-info .re
   color: #fff;
   transition: all 0.2s;
 }
-/* line 37, ../sass/partials/_main.scss */
-#services .services-content button:hover {
+/* line 40, ../sass/partials/_main.scss */
+#services .part-services .services-content button:hover {
   background: #fff;
   color: #f6c452;
 }
-/* line 43, ../sass/partials/_main.scss */
+/* line 47, ../sass/partials/_main.scss */
 #services .green-banner {
-  padding: 1rem 0;
+  background: rgba(45, 181, 194, 0.5);
+  padding: 5rem 0;
 }
-/* line 45, ../sass/partials/_main.scss */
+/* line 50, ../sass/partials/_main.scss */
 #services .green-banner .banner-user {
   display: flex;
   height: 100%;
 }
-/* line 48, ../sass/partials/_main.scss */
+/* line 53, ../sass/partials/_main.scss */
 #services .green-banner .banner-user div {
   margin-left: 2rem;
   color: #fff;
 }
-/* line 51, ../sass/partials/_main.scss */
+/* line 56, ../sass/partials/_main.scss */
 #services .green-banner .banner-user div h1 {
   font-size: 1.5rem;
   margin-bottom: 1.2rem;

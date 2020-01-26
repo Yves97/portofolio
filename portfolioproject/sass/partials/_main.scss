@@ -1,47 +1,52 @@
 #services{
-    padding: 5rem 0;
+    padding: 5rem 0 0 0;
     position: relative;
-    .services-content{
-        text-align: center;
-        color: $color-white;
-        padding: 1rem;
-        transition: $default-transition;
-        &:hover{
-            background: $gray-fade;
-        }
-        a{
-            @include unstyle-link();
+    .part-services{
+        padding: 5rem;
+        .services-content{
+            position: relative;
+            text-align: center;
             color: $color-white;
-            &:hover{
-                color: $primary-color;
-            }
-        }
-        h1{
-            padding: 2rem 0;
-            border-bottom: 1px solid $color-white;
-            text-transform: uppercase;
-            font-size: 2rem;
-        }
-        svg{
-            padding: 3rem 0;
-        }
-        p{
-            line-height: $defaut-line-height;
-            margin-bottom: 2rem;
-        }
-        button{
-            @include button-size();
-            background: $primary-color;
-            color: $color-white;
+            padding: 1rem;
             transition: $default-transition;
             &:hover{
-                background: $color-white;
-                color: $primary-color;
+                background: $gray-fade;
+            }
+            a{
+                @include unstyle-link();
+                color: $color-white;
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+            h1{
+                padding: 2rem 0;
+                border-bottom: 1px solid $color-white;
+                text-transform: uppercase;
+                font-size: 2rem;
+            }
+            svg{
+                padding: 3rem 0;
+            }
+            p{
+                line-height: $defaut-line-height;
+                margin-bottom: 2rem;
+            }
+            button{
+                @include button-size();
+                background: $primary-color;
+                color: $color-white;
+                transition: $default-transition;
+                &:hover{
+                    background: $color-white;
+                    color: $primary-color;
+                }
             }
         }
     }
     .green-banner{
-        padding: 1rem 0;
+        background: $color-green;
+        padding: 5rem 0;
         .banner-user{
             display: flex;
             height: 100%;
