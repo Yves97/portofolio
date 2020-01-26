@@ -39,16 +39,7 @@ header{
                 line-height: $defaut-line-height;
             }
             button{
-                @include button-size()
-            }
-            .learn-btn{
-                background: $primary-color;
-                color: $color-white;
-                transition: $default-transition;
-                &:hover{
-                    background: $color-white;
-                    color: $color-black;
-                }   
+                @include main-button();
             }
             .register{
                 background: $color-white;

@@ -5,13 +5,21 @@
     transform: translate(-50%,-50%);
 }
 
-@mixin button-size {
+@mixin main-button{
+    background: $primary-color;
+    color: $color-white;
     border: none;
     border-radius: 15px;
     padding: .3rem;
     height: 2rem;
     width: 8rem;
     cursor: pointer;
+    box-shadow: $custom-box-shadow;
+    transition: $default-transition;
+    &:hover{
+        background: $color-white;
+        color: $primary-color;
+    }
 }
 
 @mixin unstyle-link {
