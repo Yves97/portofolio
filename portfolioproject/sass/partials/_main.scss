@@ -1,5 +1,6 @@
 #services{
     padding: 5rem 0;
+    position: relative;
     .services-content{
         text-align: center;
         color: $color-white;
@@ -36,6 +37,21 @@
             &:hover{
                 background: $color-white;
                 color: $primary-color;
+            }
+        }
+    }
+    .green-banner{
+        padding: 1rem 0;
+        .banner-user{
+            display: flex;
+            height: 100%;
+            div{
+                margin-left: 2rem;
+                color: $color-white;
+                h1{
+                    font-size: 1.5rem;
+                    margin-bottom: 1.2rem;
+                }
             }
         }
     }
