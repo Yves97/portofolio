@@ -1,0 +1,65 @@
+header{
+    height: 100vh;
+    .y-navbar{
+        z-index: 1000;
+        padding: 1rem;
+        position: fixed;
+        width: 100%;
+        background: transparent;
+        .img-logo{
+            float: left;
+        }
+        .sidebar-button{
+            float: right;
+            position: fixed;
+            z-index: 1000;
+            right: 2rem;
+            width: 3rem;
+            height: 3rem;
+            border: none;
+            border-radius: 50%;
+            background: $color-white;
+            box-shadow: $custom-box-shadow;
+            cursor: pointer;
+        }
+    }
+    .carousel,.carousel-inner,.carousel-item{
+        height: 100%;
+        position: relative;
+        .box-info{
+            @include absolute-center();
+            color: $color-white;
+            svg,h1,p{
+                margin-bottom: 2rem;
+            }
+            h1{
+                font-size: 5rem;
+            }
+            p{
+                line-height: $defaut-line-height;
+            }
+            button{
+                @include button-size()
+            }
+            .learn-btn{
+                background: $primary-color;
+                color: $color-white;
+                transition: $default-transition;
+                &:hover{
+                    background: $color-white;
+                    color: $color-black;
+                }   
+            }
+            .register{
+                background: $color-white;
+                color: $color-black;
+                &:hover{
+                    background: $primary-color;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+    
+
+}

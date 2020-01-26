@@ -1,0 +1,215 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/partials/_header.scss */
+header {
+  height: 100vh;
+}
+/* line 3, ../sass/partials/_header.scss */
+header .y-navbar {
+  z-index: 1000;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  background: transparent;
+}
+/* line 9, ../sass/partials/_header.scss */
+header .y-navbar .img-logo {
+  float: left;
+}
+/* line 12, ../sass/partials/_header.scss */
+header .y-navbar .sidebar-button {
+  float: right;
+  position: fixed;
+  z-index: 1000;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 5px #000;
+  cursor: pointer;
+}
+/* line 26, ../sass/partials/_header.scss */
+header .carousel, header .carousel-inner, header .carousel-item {
+  height: 100%;
+  position: relative;
+}
+/* line 29, ../sass/partials/_header.scss */
+header .carousel .box-info, header .carousel-inner .box-info, header .carousel-item .box-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+/* line 32, ../sass/partials/_header.scss */
+header .carousel .box-info svg, header .carousel .box-info h1, header .carousel .box-info p, header .carousel-inner .box-info svg, header .carousel-inner .box-info h1, header .carousel-inner .box-info p, header .carousel-item .box-info svg, header .carousel-item .box-info h1, header .carousel-item .box-info p {
+  margin-bottom: 2rem;
+}
+/* line 35, ../sass/partials/_header.scss */
+header .carousel .box-info h1, header .carousel-inner .box-info h1, header .carousel-item .box-info h1 {
+  font-size: 5rem;
+}
+/* line 38, ../sass/partials/_header.scss */
+header .carousel .box-info p, header .carousel-inner .box-info p, header .carousel-item .box-info p {
+  line-height: 1.5rem;
+}
+/* line 41, ../sass/partials/_header.scss */
+header .carousel .box-info button, header .carousel-inner .box-info button, header .carousel-item .box-info button {
+  border: none;
+  border-radius: 15px;
+  padding: .3rem;
+  height: 2rem;
+  width: 8rem;
+  cursor: pointer;
+}
+/* line 44, ../sass/partials/_header.scss */
+header .carousel .box-info .learn-btn, header .carousel-inner .box-info .learn-btn, header .carousel-item .box-info .learn-btn {
+  background: #f6c452;
+  color: #fff;
+  transition: all 0.2s;
+}
+/* line 48, ../sass/partials/_header.scss */
+header .carousel .box-info .learn-btn:hover, header .carousel-inner .box-info .learn-btn:hover, header .carousel-item .box-info .learn-btn:hover {
+  background: #fff;
+  color: #000;
+}
+/* line 53, ../sass/partials/_header.scss */
+header .carousel .box-info .register, header .carousel-inner .box-info .register, header .carousel-item .box-info .register {
+  background: #fff;
+  color: #000;
+}
+/* line 56, ../sass/partials/_header.scss */
+header .carousel .box-info .register:hover, header .carousel-inner .box-info .register:hover, header .carousel-item .box-info .register:hover {
+  background: #f6c452;
+  color: #fff;
+}
+
+/* line 1, ../sass/partials/_main.scss */
+#services {
+  padding: 5rem 0;
+}
+/* line 3, ../sass/partials/_main.scss */
+#services .services-content {
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+/* line 8, ../sass/partials/_main.scss */
+#services .services-content:hover {
+  background: rgba(180, 180, 180, 0.26);
+}
+/* line 11, ../sass/partials/_main.scss */
+#services .services-content a {
+  text-decoration: none;
+  color: #000;
+  color: #fff;
+}
+/* line 14, ../sass/partials/_main.scss */
+#services .services-content a:hover {
+  color: #f6c452;
+}
+/* line 18, ../sass/partials/_main.scss */
+#services .services-content h1 {
+  padding: 2rem 0;
+  border-bottom: 1px solid #fff;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+/* line 24, ../sass/partials/_main.scss */
+#services .services-content svg {
+  padding: 3rem 0;
+}
+/* line 27, ../sass/partials/_main.scss */
+#services .services-content p {
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+/* line 31, ../sass/partials/_main.scss */
+#services .services-content button {
+  border: none;
+  border-radius: 15px;
+  padding: .3rem;
+  height: 2rem;
+  width: 8rem;
+  cursor: pointer;
+  background: #f6c452;
+  color: #fff;
+  transition: all 0.2s;
+}
+/* line 36, ../sass/partials/_main.scss */
+#services .services-content button:hover {
+  background: #fff;
+  color: #f6c452;
+}
+
+/*# sourceMappingURL=screen.css.map */
