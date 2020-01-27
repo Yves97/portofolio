@@ -1,7 +1,15 @@
 @media screen and (max-width:740px){
     header{
         #carouselId{
-            
+            .carousel-inner{
+                .carousel-item{
+                    .box-info{
+                        svg, p{
+                            display: none;
+                        }
+                    }
+                }
+            }
         }
     }
     #services{

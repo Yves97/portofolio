@@ -451,21 +451,26 @@ footer .box-info ul li a:hover, footer #welcome .box-info .box-content__info ul 
 }
 
 @media screen and (max-width: 740px) {
-  /* line 8, ../sass/partials/_media-queries.scss */
+  /* line 7, ../sass/partials/_media-queries.scss */
+  header #carouselId .carousel-inner .carousel-item .box-info svg, #welcome .box-info header #carouselId .carousel-inner .carousel-item .box-content__info svg, header #carouselId .carousel-inner .carousel-item .box-info p, #welcome .box-info header #carouselId .carousel-inner .carousel-item .box-content__info p {
+    display: none;
+  }
+
+  /* line 16, ../sass/partials/_media-queries.scss */
   #services .part-services {
     padding: 0;
   }
-  /* line 13, ../sass/partials/_media-queries.scss */
+  /* line 21, ../sass/partials/_media-queries.scss */
   #services .green-banner .banner-content p {
     width: 100%;
   }
 
-  /* line 20, ../sass/partials/_media-queries.scss */
+  /* line 28, ../sass/partials/_media-queries.scss */
   #solutions h1, #solutions p {
     font-size: 3rem;
     width: 100%;
   }
-  /* line 24, ../sass/partials/_media-queries.scss */
+  /* line 32, ../sass/partials/_media-queries.scss */
   #solutions p {
     font-size: 1.3rem;
   }
