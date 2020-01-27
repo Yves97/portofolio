@@ -70,7 +70,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 1, ../sass/partials/_header.scss */
 header {
-  min-height: 100vh;
+  height: 100vh;
 }
 /* line 3, ../sass/partials/_header.scss */
 header .y-navbar {
@@ -102,13 +102,15 @@ header .y-navbar .sidebar-button {
 /* line 27, ../sass/partials/_header.scss */
 header #carouselId {
   position: relative;
-  z-index: 700;
+  width: 100%;
+  height: 100%;
 }
-/* line 30, ../sass/partials/_header.scss */
+/* line 31, ../sass/partials/_header.scss */
 header #carouselId .carousel-inner, header #carouselId .carousel-item {
   height: 100vh;
+  position: relative;
 }
-/* line 32, ../sass/partials/_header.scss */
+/* line 34, ../sass/partials/_header.scss */
 header #carouselId .carousel-inner .box-info, header #carouselId .carousel-inner #welcome .box-info .box-content__info, #welcome .box-info header #carouselId .carousel-inner .box-content__info, header #carouselId .carousel-item .box-info, header #carouselId .carousel-item #welcome .box-info .box-content__info, #welcome .box-info header #carouselId .carousel-item .box-content__info {
   padding: 1rem;
   text-align: center;
@@ -117,22 +119,22 @@ header #carouselId .carousel-inner .box-info, header #carouselId .carousel-inner
   transform: translateY(-50%);
   color: #fff;
 }
-/* line 37, ../sass/partials/_header.scss */
+/* line 39, ../sass/partials/_header.scss */
 header #carouselId .carousel-inner .box-info svg, #welcome .box-info header #carouselId .carousel-inner .box-content__info svg, header #carouselId .carousel-inner .box-info h1, #welcome .box-info header #carouselId .carousel-inner .box-content__info h1, header #carouselId .carousel-inner .box-info #solutions p, #solutions header #carouselId .carousel-inner .box-info p, #welcome .box-info header #carouselId .carousel-inner .box-content__info #solutions p, #solutions #welcome .box-info header #carouselId .carousel-inner .box-content__info p, header #carouselId .carousel-inner .box-info p, #welcome .box-info header #carouselId .carousel-inner .box-content__info p, header #carouselId .carousel-item .box-info svg, #welcome .box-info header #carouselId .carousel-item .box-content__info svg, header #carouselId .carousel-item .box-info h1, #welcome .box-info header #carouselId .carousel-item .box-content__info h1, header #carouselId .carousel-item .box-info #solutions p, #solutions header #carouselId .carousel-item .box-info p, #welcome .box-info header #carouselId .carousel-item .box-content__info #solutions p, #solutions #welcome .box-info header #carouselId .carousel-item .box-content__info p, header #carouselId .carousel-item .box-info p, #welcome .box-info header #carouselId .carousel-item .box-content__info p {
   margin-bottom: 2rem;
 }
-/* line 40, ../sass/partials/_header.scss */
+/* line 42, ../sass/partials/_header.scss */
 header #carouselId .carousel-inner .box-info h1, #welcome .box-info header #carouselId .carousel-inner .box-content__info h1, header #carouselId .carousel-inner .box-info #solutions p, #solutions header #carouselId .carousel-inner .box-info p, #welcome .box-info header #carouselId .carousel-inner .box-content__info #solutions p, #solutions #welcome .box-info header #carouselId .carousel-inner .box-content__info p, header #carouselId .carousel-item .box-info h1, #welcome .box-info header #carouselId .carousel-item .box-content__info h1, header #carouselId .carousel-item .box-info #solutions p, #solutions header #carouselId .carousel-item .box-info p, #welcome .box-info header #carouselId .carousel-item .box-content__info #solutions p, #solutions #welcome .box-info header #carouselId .carousel-item .box-content__info p {
   font-size: 5rem;
 }
-/* line 43, ../sass/partials/_header.scss */
+/* line 45, ../sass/partials/_header.scss */
 header #carouselId .carousel-inner .box-info p, #welcome .box-info header #carouselId .carousel-inner .box-content__info p, header #carouselId .carousel-item .box-info p, #welcome .box-info header #carouselId .carousel-item .box-content__info p {
   width: 70%;
   margin: 0 auto;
   margin-bottom: 2rem;
   font-size: 1.5rem;
 }
-/* line 50, ../sass/partials/_header.scss */
+/* line 52, ../sass/partials/_header.scss */
 header #carouselId .carousel-inner .box-info button, #welcome .box-info header #carouselId .carousel-inner .box-content__info button, header #carouselId .carousel-item .box-info button, #welcome .box-info header #carouselId .carousel-item .box-content__info button {
   background: #f6c452;
   color: #fff;
@@ -151,12 +153,12 @@ header #carouselId .carousel-inner .box-info button:hover, #welcome .box-info he
   background: #fff;
   color: #f6c452;
 }
-/* line 54, ../sass/partials/_header.scss */
+/* line 56, ../sass/partials/_header.scss */
 header #carouselId .carousel-inner .box-info .register, #welcome .box-info header #carouselId .carousel-inner .box-content__info .register, header #carouselId .carousel-item .box-info .register, #welcome .box-info header #carouselId .carousel-item .box-content__info .register {
   background: #fff;
   color: #000;
 }
-/* line 57, ../sass/partials/_header.scss */
+/* line 59, ../sass/partials/_header.scss */
 header #carouselId .carousel-inner .box-info .register:hover, #welcome .box-info header #carouselId .carousel-inner .box-content__info .register:hover, header #carouselId .carousel-item .box-info .register:hover, #welcome .box-info header #carouselId .carousel-item .box-content__info .register:hover {
   background: #f6c452;
   color: #fff;
@@ -231,30 +233,31 @@ header #carouselId .carousel-inner .box-info .register:hover, #welcome .box-info
   padding: 5rem 0;
 }
 /* line 41, ../sass/partials/_main.scss */
-#services .green-banner .banner-user {
-  margin-bottom: 1.5rem;
-}
-/* line 43, ../sass/partials/_main.scss */
-#services .green-banner .banner-user div {
+#services .green-banner .banner-content {
+  padding: 1rem 0;
   color: #fff;
 }
-/* line 45, ../sass/partials/_main.scss */
-#services .green-banner .banner-user div h1, #services .green-banner .banner-user div #solutions p, #solutions #services .green-banner .banner-user div p {
+/* line 44, ../sass/partials/_main.scss */
+#services .green-banner .banner-content h1, #services .green-banner .banner-content #solutions p, #solutions #services .green-banner .banner-content p {
   font-size: 1.5rem;
-  margin-bottom: 1.2rem;
+  margin: 1.2rem 0;
+}
+/* line 48, ../sass/partials/_main.scss */
+#services .green-banner .banner-content p {
+  width: 70%;
 }
 
-/* line 54, ../sass/partials/_main.scss */
+/* line 56, ../sass/partials/_main.scss */
 .none {
   margin: 0;
   padding: 0;
 }
 
-/* line 59, ../sass/partials/_main.scss */
+/* line 61, ../sass/partials/_main.scss */
 #img-listing {
   background: #ededed;
 }
-/* line 61, ../sass/partials/_main.scss */
+/* line 63, ../sass/partials/_main.scss */
 #img-listing button {
   background: #f6c452;
   color: #fff;
@@ -274,21 +277,21 @@ header #carouselId .carousel-inner .box-info .register:hover, #welcome .box-info
   color: #f6c452;
 }
 
-/* line 67, ../sass/partials/_main.scss */
+/* line 69, ../sass/partials/_main.scss */
 #welcome {
   background: #ededed;
 }
-/* line 69, ../sass/partials/_main.scss */
+/* line 71, ../sass/partials/_main.scss */
 #welcome h1, #welcome #solutions p, #solutions #welcome p {
   margin-bottom: 2rem;
   font-size: 3.5rem;
   color: rgba(45, 181, 194, 0.5);
 }
-/* line 74, ../sass/partials/_main.scss */
+/* line 76, ../sass/partials/_main.scss */
 #welcome .box-info, #welcome .box-info .box-content__info {
   padding: 2rem 0;
 }
-/* line 78, ../sass/partials/_main.scss */
+/* line 80, ../sass/partials/_main.scss */
 #welcome .box-info .box-content__info a {
   text-decoration: none;
   color: #000;
@@ -296,23 +299,23 @@ header #carouselId .carousel-inner .box-info .register:hover, #welcome .box-info
   font-size: 1.5rem;
   color: #19272e;
 }
-/* line 83, ../sass/partials/_main.scss */
+/* line 85, ../sass/partials/_main.scss */
 #welcome .box-info .box-content__info a:hover {
   color: #f6c452 !important;
 }
-/* line 86, ../sass/partials/_main.scss */
+/* line 88, ../sass/partials/_main.scss */
 #welcome .box-info .box-content__info a h3 {
   font-size: 2rem;
   color: #19272e;
   margin-top: 1rem;
 }
-/* line 92, ../sass/partials/_main.scss */
+/* line 94, ../sass/partials/_main.scss */
 #welcome .box-info .box-content__info p {
   color: #565a5b;
   margin: 1rem 0 1.5rem 0;
   line-height: 1.2rem;
 }
-/* line 97, ../sass/partials/_main.scss */
+/* line 99, ../sass/partials/_main.scss */
 #welcome .box-info .box-content__info button {
   background: #f6c452;
   color: #fff;
@@ -331,23 +334,23 @@ header #carouselId .carousel-inner .box-info .register:hover, #welcome .box-info
   color: #f6c452;
 }
 
-/* line 105, ../sass/partials/_main.scss */
+/* line 107, ../sass/partials/_main.scss */
 #solutions {
   padding: 7rem 0;
 }
-/* line 107, ../sass/partials/_main.scss */
+/* line 109, ../sass/partials/_main.scss */
 #solutions h1, #solutions p {
   color: #fff;
   font-size: 6rem;
   margin-bottom: 1.5rem;
   width: 80%;
 }
-/* line 113, ../sass/partials/_main.scss */
+/* line 115, ../sass/partials/_main.scss */
 #solutions p {
   font-size: 2rem;
   line-height: 1.8rem;
 }
-/* line 118, ../sass/partials/_main.scss */
+/* line 120, ../sass/partials/_main.scss */
 #solutions button {
   background: #f6c452;
   color: #fff;
@@ -366,21 +369,21 @@ header #carouselId .carousel-inner .box-info .register:hover, #welcome .box-info
   color: #f6c452;
 }
 
-/* line 123, ../sass/partials/_main.scss */
+/* line 125, ../sass/partials/_main.scss */
 #skills {
   padding: 5rem 0;
 }
-/* line 126, ../sass/partials/_main.scss */
+/* line 128, ../sass/partials/_main.scss */
 #skills .skills-content a {
   text-decoration: none;
   color: #000;
   color: #fff;
 }
-/* line 129, ../sass/partials/_main.scss */
+/* line 131, ../sass/partials/_main.scss */
 #skills .skills-content a:hover {
   color: #f6c452;
 }
-/* line 133, ../sass/partials/_main.scss */
+/* line 135, ../sass/partials/_main.scss */
 #skills .skills-content h1, #skills .skills-content #solutions p, #solutions #skills .skills-content p {
   padding: 2rem 0;
   border-bottom: 1px solid #fff;
@@ -388,14 +391,14 @@ header #carouselId .carousel-inner .box-info .register:hover, #welcome .box-info
   font-size: 2rem;
   margin-bottom: 3rem;
 }
-/* line 140, ../sass/partials/_main.scss */
+/* line 142, ../sass/partials/_main.scss */
 #skills .skills-content p {
   color: #fff;
   font-size: 1.3rem;
   line-height: 1.5rem;
   margin: 2rem 0 2rem 0;
 }
-/* line 146, ../sass/partials/_main.scss */
+/* line 148, ../sass/partials/_main.scss */
 #skills .skills-content button {
   background: #f6c452;
   color: #fff;
@@ -448,22 +451,23 @@ footer .box-info ul li a:hover, footer #welcome .box-info .box-content__info ul 
 }
 
 @media screen and (max-width: 740px) {
-  /* line 2, ../sass/partials/_media-queries.scss */
-  header {
-    height: unset;
-  }
-  /* line 4, ../sass/partials/_media-queries.scss */
-  header .box-info, header #welcome .box-info .box-content__info, #welcome .box-info header .box-content__info {
-    position: unset;
-  }
-
-  /* line 9, ../sass/partials/_media-queries.scss */
+  /* line 8, ../sass/partials/_media-queries.scss */
   #services .part-services {
     padding: 0;
   }
   /* line 13, ../sass/partials/_media-queries.scss */
-  #services .green-banner .banner-user {
-    display: block;
+  #services .green-banner .banner-content p {
+    width: 100%;
+  }
+
+  /* line 20, ../sass/partials/_media-queries.scss */
+  #solutions h1, #solutions p {
+    font-size: 3rem;
+    width: 100%;
+  }
+  /* line 24, ../sass/partials/_media-queries.scss */
+  #solutions p {
+    font-size: 1.3rem;
   }
 }
 

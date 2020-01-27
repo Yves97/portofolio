@@ -38,18 +38,20 @@
     .green-banner{
         background: $color-green;
         padding: 5rem 0;
-        .banner-user{
-            margin-bottom: 1.5rem;
-            div{
-                color: $color-white;
-                h1{
-                    font-size: 1.5rem;
-                    margin-bottom: 1.2rem;
-                }
+        .banner-content{
+            padding: 1rem 0;
+            color: $color-white;
+            h1{
+                font-size: 1.5rem;
+                margin: 1.2rem 0; 
+            }
+            p{
+                width: 70%;
             }
         }
     }
 }
+
 
 .none{
     margin: 0;

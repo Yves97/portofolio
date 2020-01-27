@@ -1,8 +1,7 @@
 @media screen and (max-width:740px){
     header{
-        height: unset;
-        .box-info{
-            position: unset;
+        #carouselId{
+            
         }
     }
     #services{
@@ -10,9 +9,20 @@
             padding: 0;
         }
         .green-banner{
-            .banner-user{
-                display: block;
+            .banner-content{
+                p{
+                    width: 100%;
+                }
             }
+        }
+    }
+    #solutions{
+        h1{
+            font-size: 3rem;
+            width: 100%;
+        }
+        p{
+            font-size: 1.3rem;
         }
     }
 }
