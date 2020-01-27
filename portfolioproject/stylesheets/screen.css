@@ -406,4 +406,37 @@ header .carousel .box-info .register:hover, header .carousel #welcome .box-info 
   color: #f6c452;
 }
 
+/* line 1, ../sass/partials/_footer.scss */
+footer {
+  padding: 5rem 0;
+}
+/* line 3, ../sass/partials/_footer.scss */
+footer .box-info, footer #welcome .box-info .box-content__info, #welcome .box-info footer .box-content__info {
+  padding: 1rem .7rem;
+}
+/* line 5, ../sass/partials/_footer.scss */
+footer .box-info h3, footer #welcome .box-info .box-content__info h3, #welcome .box-info footer .box-content__info h3 {
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 2rem;
+}
+/* line 13, ../sass/partials/_footer.scss */
+footer .box-info ul li, footer #welcome .box-info .box-content__info ul li, #welcome .box-info footer .box-content__info ul li {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+/* line 16, ../sass/partials/_footer.scss */
+footer .box-info ul li a, footer #welcome .box-info .box-content__info ul li a, #welcome .box-info footer .box-content__info ul li a {
+  text-decoration: none;
+  color: #000;
+  color: #fff;
+  transition: all 0.2s;
+}
+/* line 20, ../sass/partials/_footer.scss */
+footer .box-info ul li a:hover, footer #welcome .box-info .box-content__info ul li a:hover, #welcome .box-info footer .box-content__info ul li a:hover {
+  color: #565a5b;
+}
+
 /*# sourceMappingURL=screen.css.map */

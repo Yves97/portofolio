@@ -26,3 +26,7 @@
     text-decoration: none;
     color: $color-black;
 }
+
+@mixin unstyle-list{
+    list-style: none;
+}
