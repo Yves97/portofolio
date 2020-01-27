@@ -1,17 +1,18 @@
 header{
-    height: 100vh;
+    min-height: 100vh;
     .y-navbar{
-        z-index: 1000;
-        padding: 1rem;
         position: fixed;
+        padding: 1rem;
         width: 100%;
         background: transparent;
+        z-index: 1000;
+        min-height: 5rem;
         .img-logo{
             float: left;
+            height: 3.5rem;
         }
         .sidebar-button{
             float: right;
-            position: fixed;
             z-index: 1000;
             right: 2rem;
             width: 3rem;
@@ -23,38 +24,42 @@ header{
             cursor: pointer;
         }
     }
-    .carousel,.carousel-inner,.carousel-item{
-        height: 100%;
-        .box-info{
-            text-align: center;
-            @include absolute-center();
-            color: $color-white;
-            svg,h1,p{
-                margin-bottom: 2rem;
-            }
-            h1{
-                font-size: 5rem;
-            }
-            p{
-                // line-height: $defaut-line-height;
-                width: 70%;
-                margin:0 auto;
-                margin-bottom: 2rem;
-                font-size: 1.5rem;
-            }
-            button{
-                @include main-button();
-            }
-            .register{
-                background: $color-white;
-                color: $color-black;
-                &:hover{
-                    background: $primary-color;
-                    color: $color-white;
+    #carouselId{
+        position: relative;
+        z-index: 700;
+        .carousel-inner,.carousel-item{
+            height: 100vh;
+            .box-info{
+                padding: 1rem;
+                text-align: center;
+                @include absolute-center();
+                color: $color-white;
+                svg,h1,p{
+                    margin-bottom: 2rem;
+                }
+                h1{
+                    font-size: 5rem;
+                }
+                p{
+                    // line-height: $defaut-line-height;
+                    width: 70%;
+                    margin:0 auto;
+                    margin-bottom: 2rem;
+                    font-size: 1.5rem;
+                }
+                button{
+                    @include main-button();
+                    margin-bottom: 2rem;
+                }
+                .register{
+                    background: $color-white;
+                    color: $color-black;
+                    &:hover{
+                        background: $primary-color;
+                        color: $color-white;
+                    }
                 }
             }
         }
     }
-    
-
 }

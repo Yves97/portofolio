@@ -1,0 +1,18 @@
+@media screen and (max-width:740px){
+    header{
+        height: unset;
+        .box-info{
+            position: unset;
+        }
+    }
+    #services{
+        .part-services{
+            padding: 0;
+        }
+        .green-banner{
+            .banner-user{
+                display: block;
+            }
+        }
+    }
+}
