@@ -101,14 +101,13 @@ header .y-navbar .sidebar-button {
 /* line 26, ../sass/partials/_header.scss */
 header .carousel, header .carousel-inner, header .carousel-item {
   height: 100%;
-  position: relative;
 }
-/* line 29, ../sass/partials/_header.scss */
+/* line 28, ../sass/partials/_header.scss */
 header .carousel .box-info, header .carousel #welcome .box-info .box-content__info, #welcome .box-info header .carousel .box-content__info, header .carousel-inner .box-info, header .carousel-inner #welcome .box-info .box-content__info, #welcome .box-info header .carousel-inner .box-content__info, header .carousel-item .box-info, header .carousel-item #welcome .box-info .box-content__info, #welcome .box-info header .carousel-item .box-content__info {
+  text-align: center;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
   color: #fff;
 }
 /* line 32, ../sass/partials/_header.scss */
@@ -121,9 +120,12 @@ header .carousel .box-info h1, header .carousel #welcome .box-info .box-content_
 }
 /* line 38, ../sass/partials/_header.scss */
 header .carousel .box-info p, header .carousel #welcome .box-info .box-content__info p, #welcome .box-info header .carousel .box-content__info p, header .carousel-inner .box-info p, header .carousel-inner #welcome .box-info .box-content__info p, #welcome .box-info header .carousel-inner .box-content__info p, header .carousel-item .box-info p, header .carousel-item #welcome .box-info .box-content__info p, #welcome .box-info header .carousel-item .box-content__info p {
-  line-height: 1.5rem;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
 }
-/* line 41, ../sass/partials/_header.scss */
+/* line 45, ../sass/partials/_header.scss */
 header .carousel .box-info button, header .carousel #welcome .box-info .box-content__info button, #welcome .box-info header .carousel .box-content__info button, header .carousel-inner .box-info button, header .carousel-inner #welcome .box-info .box-content__info button, #welcome .box-info header .carousel-inner .box-content__info button, header .carousel-item .box-info button, header .carousel-item #welcome .box-info .box-content__info button, #welcome .box-info header .carousel-item .box-content__info button {
   background: #f6c452;
   color: #fff;
@@ -136,17 +138,17 @@ header .carousel .box-info button, header .carousel #welcome .box-info .box-cont
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.336);
   transition: all 0.2s;
 }
-/* line 19, ../sass/partials/_mixins.scss */
+/* line 18, ../sass/partials/_mixins.scss */
 header .carousel .box-info button:hover, header .carousel #welcome .box-info .box-content__info button:hover, #welcome .box-info header .carousel .box-content__info button:hover, header .carousel-inner .box-info button:hover, header .carousel-inner #welcome .box-info .box-content__info button:hover, #welcome .box-info header .carousel-inner .box-content__info button:hover, header .carousel-item .box-info button:hover, header .carousel-item #welcome .box-info .box-content__info button:hover, #welcome .box-info header .carousel-item .box-content__info button:hover {
   background: #fff;
   color: #f6c452;
 }
-/* line 44, ../sass/partials/_header.scss */
+/* line 48, ../sass/partials/_header.scss */
 header .carousel .box-info .register, header .carousel #welcome .box-info .box-content__info .register, #welcome .box-info header .carousel .box-content__info .register, header .carousel-inner .box-info .register, header .carousel-inner #welcome .box-info .box-content__info .register, #welcome .box-info header .carousel-inner .box-content__info .register, header .carousel-item .box-info .register, header .carousel-item #welcome .box-info .box-content__info .register, #welcome .box-info header .carousel-item .box-content__info .register {
   background: #fff;
   color: #000;
 }
-/* line 47, ../sass/partials/_header.scss */
+/* line 51, ../sass/partials/_header.scss */
 header .carousel .box-info .register:hover, header .carousel #welcome .box-info .box-content__info .register:hover, #welcome .box-info header .carousel .box-content__info .register:hover, header .carousel-inner .box-info .register:hover, header .carousel-inner #welcome .box-info .box-content__info .register:hover, #welcome .box-info header .carousel-inner .box-content__info .register:hover, header .carousel-item .box-info .register:hover, header .carousel-item #welcome .box-info .box-content__info .register:hover, #welcome .box-info header .carousel-item .box-content__info .register:hover {
   background: #f6c452;
   color: #fff;
@@ -210,7 +212,7 @@ header .carousel .box-info .register:hover, header .carousel #welcome .box-info 
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.336);
   transition: all 0.2s;
 }
-/* line 19, ../sass/partials/_mixins.scss */
+/* line 18, ../sass/partials/_mixins.scss */
 #services .part-services .services-content button:hover {
   background: #fff;
   color: #f6c452;
@@ -260,7 +262,7 @@ header .carousel .box-info .register:hover, header .carousel #welcome .box-info 
   transition: all 0.2s;
   margin: 2rem 0;
 }
-/* line 19, ../sass/partials/_mixins.scss */
+/* line 18, ../sass/partials/_mixins.scss */
 #img-listing button:hover {
   background: #fff;
   color: #f6c452;
@@ -317,7 +319,7 @@ header .carousel .box-info .register:hover, header .carousel #welcome .box-info 
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.336);
   transition: all 0.2s;
 }
-/* line 19, ../sass/partials/_mixins.scss */
+/* line 18, ../sass/partials/_mixins.scss */
 #welcome .box-info .box-content__info button:hover {
   background: #fff;
   color: #f6c452;
@@ -352,7 +354,7 @@ header .carousel .box-info .register:hover, header .carousel #welcome .box-info 
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.336);
   transition: all 0.2s;
 }
-/* line 19, ../sass/partials/_mixins.scss */
+/* line 18, ../sass/partials/_mixins.scss */
 #solutions button:hover {
   background: #fff;
   color: #f6c452;
@@ -400,7 +402,7 @@ header .carousel .box-info .register:hover, header .carousel #welcome .box-info 
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.336);
   transition: all 0.2s;
 }
-/* line 19, ../sass/partials/_mixins.scss */
+/* line 18, ../sass/partials/_mixins.scss */
 #skills .skills-content button:hover {
   background: #fff;
   color: #f6c452;
