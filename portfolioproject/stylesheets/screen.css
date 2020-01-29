@@ -68,11 +68,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 2, ../sass/partials/_header.scss */
+/* line 1, ../sass/partials/_header.scss */
 header {
   height: 100vh;
 }
-/* line 4, ../sass/partials/_header.scss */
+/* line 3, ../sass/partials/_header.scss */
 header .y-navbar {
   position: fixed;
   padding: 1rem;
@@ -81,12 +81,12 @@ header .y-navbar {
   z-index: 1000;
   min-height: 5rem;
 }
-/* line 11, ../sass/partials/_header.scss */
+/* line 10, ../sass/partials/_header.scss */
 header .y-navbar .img-logo {
   float: left;
   height: 3.5rem;
 }
-/* line 15, ../sass/partials/_header.scss */
+/* line 14, ../sass/partials/_header.scss */
 header .y-navbar .sidebar-button {
   float: right;
   z-index: 1000;
@@ -97,9 +97,18 @@ header .y-navbar .sidebar-button {
   border-radius: 50%;
   background: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.336);
+  transition: all 0.2s;
   cursor: pointer;
 }
-/* line 27, ../sass/partials/_header.scss */
+/* line 26, ../sass/partials/_header.scss */
+header .y-navbar .sidebar-button:focus {
+  outline: none;
+}
+/* line 30, ../sass/partials/_header.scss */
+header .y-navbar .bg-side {
+  background: #000;
+}
+/* line 33, ../sass/partials/_header.scss */
 header .y-navbar .sidebar {
   width: 20rem;
   position: fixed;
@@ -110,11 +119,11 @@ header .y-navbar .sidebar {
   padding: 1rem 0 1rem 1rem;
   display: none;
 }
-/* line 37, ../sass/partials/_header.scss */
+/* line 43, ../sass/partials/_header.scss */
 header .y-navbar .sidebar ul li {
   font-weight: bold;
 }
-/* line 39, ../sass/partials/_header.scss */
+/* line 45, ../sass/partials/_header.scss */
 header .y-navbar .sidebar ul li a {
   text-decoration: none;
   color: #000;
@@ -124,23 +133,23 @@ header .y-navbar .sidebar ul li a {
   transition: all 0.2s;
   display: block;
 }
-/* line 48, ../sass/partials/_header.scss */
+/* line 52, ../sass/partials/_header.scss */
 header .y-navbar .sidebar ul li a:hover {
   color: #f6c452;
   transform: translateX(2%);
 }
-/* line 58, ../sass/partials/_header.scss */
+/* line 62, ../sass/partials/_header.scss */
 header #carouselId {
   position: relative;
   width: 100%;
   height: 100%;
 }
-/* line 62, ../sass/partials/_header.scss */
+/* line 66, ../sass/partials/_header.scss */
 header #carouselId .carousel-inner, header #carouselId .carousel-item {
   height: 100vh;
   position: relative;
 }
-/* line 65, ../sass/partials/_header.scss */
+/* line 69, ../sass/partials/_header.scss */
 header #carouselId .carousel-inner .box-info, header #carouselId .carousel-inner #welcome .box-info .box-content__info, #welcome .box-info header #carouselId .carousel-inner .box-content__info, header #carouselId .carousel-item .box-info, header #carouselId .carousel-item #welcome .box-info .box-content__info, #welcome .box-info header #carouselId .carousel-item .box-content__info {
   padding: 1rem;
   text-align: center;
@@ -149,22 +158,22 @@ header #carouselId .carousel-inner .box-info, header #carouselId .carousel-inner
   transform: translateY(-50%);
   color: #fff;
 }
-/* line 70, ../sass/partials/_header.scss */
+/* line 74, ../sass/partials/_header.scss */
 header #carouselId .carousel-inner .box-info svg, #welcome .box-info header #carouselId .carousel-inner .box-content__info svg, header #carouselId .carousel-inner .box-info h1, #welcome .box-info header #carouselId .carousel-inner .box-content__info h1, header #carouselId .carousel-inner .box-info #solutions p, #solutions header #carouselId .carousel-inner .box-info p, #welcome .box-info header #carouselId .carousel-inner .box-content__info #solutions p, #solutions #welcome .box-info header #carouselId .carousel-inner .box-content__info p, header #carouselId .carousel-inner .box-info p, #welcome .box-info header #carouselId .carousel-inner .box-content__info p, header #carouselId .carousel-item .box-info svg, #welcome .box-info header #carouselId .carousel-item .box-content__info svg, header #carouselId .carousel-item .box-info h1, #welcome .box-info header #carouselId .carousel-item .box-content__info h1, header #carouselId .carousel-item .box-info #solutions p, #solutions header #carouselId .carousel-item .box-info p, #welcome .box-info header #carouselId .carousel-item .box-content__info #solutions p, #solutions #welcome .box-info header #carouselId .carousel-item .box-content__info p, header #carouselId .carousel-item .box-info p, #welcome .box-info header #carouselId .carousel-item .box-content__info p {
   margin-bottom: 2rem;
 }
-/* line 73, ../sass/partials/_header.scss */
+/* line 77, ../sass/partials/_header.scss */
 header #carouselId .carousel-inner .box-info h1, #welcome .box-info header #carouselId .carousel-inner .box-content__info h1, header #carouselId .carousel-inner .box-info #solutions p, #solutions header #carouselId .carousel-inner .box-info p, #welcome .box-info header #carouselId .carousel-inner .box-content__info #solutions p, #solutions #welcome .box-info header #carouselId .carousel-inner .box-content__info p, header #carouselId .carousel-item .box-info h1, #welcome .box-info header #carouselId .carousel-item .box-content__info h1, header #carouselId .carousel-item .box-info #solutions p, #solutions header #carouselId .carousel-item .box-info p, #welcome .box-info header #carouselId .carousel-item .box-content__info #solutions p, #solutions #welcome .box-info header #carouselId .carousel-item .box-content__info p {
   font-size: 5rem;
 }
-/* line 76, ../sass/partials/_header.scss */
+/* line 80, ../sass/partials/_header.scss */
 header #carouselId .carousel-inner .box-info p, #welcome .box-info header #carouselId .carousel-inner .box-content__info p, header #carouselId .carousel-item .box-info p, #welcome .box-info header #carouselId .carousel-item .box-content__info p {
   width: 70%;
   margin: 0 auto;
   margin-bottom: 2rem;
   font-size: 1.5rem;
 }
-/* line 83, ../sass/partials/_header.scss */
+/* line 87, ../sass/partials/_header.scss */
 header #carouselId .carousel-inner .box-info button, #welcome .box-info header #carouselId .carousel-inner .box-content__info button, header #carouselId .carousel-item .box-info button, #welcome .box-info header #carouselId .carousel-item .box-content__info button {
   background: #f6c452;
   color: #fff;
@@ -183,12 +192,12 @@ header #carouselId .carousel-inner .box-info button:hover, #welcome .box-info he
   background: #fff;
   color: #f6c452;
 }
-/* line 87, ../sass/partials/_header.scss */
+/* line 91, ../sass/partials/_header.scss */
 header #carouselId .carousel-inner .box-info .register, #welcome .box-info header #carouselId .carousel-inner .box-content__info .register, header #carouselId .carousel-item .box-info .register, #welcome .box-info header #carouselId .carousel-item .box-content__info .register {
   background: #fff;
   color: #000;
 }
-/* line 90, ../sass/partials/_header.scss */
+/* line 94, ../sass/partials/_header.scss */
 header #carouselId .carousel-inner .box-info .register:hover, #welcome .box-info header #carouselId .carousel-inner .box-content__info .register:hover, header #carouselId .carousel-item .box-info .register:hover, #welcome .box-info header #carouselId .carousel-item .box-content__info .register:hover {
   background: #f6c452;
   color: #fff;

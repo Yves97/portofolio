@@ -1,4 +1,3 @@
-
 header{
     height: 100vh;
     .y-navbar{
@@ -22,7 +21,14 @@ header{
             border-radius: 50%;
             background: $color-white;
             box-shadow: $custom-box-shadow;
+            transition: $default-transition;
             cursor: pointer;
+            &:focus{
+                outline: none;
+            }
+        }
+        .bg-side{
+            background: $color-black;
         }
         .sidebar{
             width: 20rem;
@@ -38,8 +44,6 @@ header{
                     font-weight: bold;
                     a{
                         @include unstyle-link();
-                        // border-top-right-radius: 2rem;
-                        // border-bottom-right-radius: 2rem;
                         padding: 1rem;
                         color: $color-white;
                         text-transform: uppercase;
